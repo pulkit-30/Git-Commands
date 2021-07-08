@@ -10,36 +10,66 @@
     <title>Git Commands</title>
   </head>
   <body>
+    <nav class="flex">
+      <div><a href="#home">Home</a></div>
+      <div><a href="#about">About Git</a></div>
+      <div><a href="#commands">Commands</a></div>
+    </nav>
     <main>
-      <section class="home flex">
+      <section class="home flex" id="home">
         <div>
           <h3>Hey there!👋</h3>
-          <h1>Want to learn git hub commands</h1>
+          <h1>Want to learn git Commands</h1>
           <div>What are you wating for scroll down 👇 and start 🚀</div>
         </div>
 
-        <div><img src="./github-logo.png" alt="" /></div>
+        <div class="float"><img src="./github-logo.png" alt="image1" /></div>
       </section>
-      <section class="commands">
+      <section class="about" id="about">
+        <h1>What is git? 🤔</h1>
+        <div>
+          Git is a free and open source distributed version control system
+          designed to handle everything from small to very large projects with
+          speed and efficiency.
+        </div>
+        <div>
+          Git is easy to learn and has a tiny footprint with lightning fast
+          performance. It outclasses SCM tools like Subversion, CVS, Perforce,
+          and ClearCase with features like cheap local branching, convenient
+          staging areas, and multiple workflows.
+        </div>
+        <div>
+          <h4>In Simple words Git is a version control system</h4>
+          <img src="https://git-scm.com/book/en/v2/images/local.png" alt="" />
+          <div class="centre">
+            To know more
+            <a
+              href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+              >click here</a
+            >
+          </div>
+        </div>
+        <div>To install git <a href="https://git-scm.com/">click here</a></div>
+      </section>
+      <hr />
+      <section class="commands" id="commands">
         <h1>Git Commands</h1>
         <dl>
-          <dt><h3>git init</h3></dt>
+          <dt><h3>1. git init</h3></dt>
           <dd>
             <div>Usage: git init [repository name]</div>
             <div>
               This command is used to start a new repository in a directory.
             </div>
           </dd>
-          <dt><h3>git status</h3></dt>
+          <dt><h3>2. git status</h3></dt>
           <dd>
+            <div>Usage: git status</div>
             <div>
-              <div>Usage: git status</div>
-              <div>
-                This command lists all the files that have to be committed.
-              </div>
+              This command lists all the files that have to be committed.
             </div>
           </dd>
-          <dt><h3>git add</h3></dt>
+          <dt><h3>3. git add</h3></dt>
           <dd>
             <div>Usage: git add [file]</div>
             <div>This command adds a file to the staging area.</div>
@@ -51,7 +81,7 @@
             <div>Usage: git add *</div>
             <div>This command adds one or more to the staging area.</div>
           </dd>
-          <dt><h3>git commit</h3></dt>
+          <dt><h3>4. git commit</h3></dt>
           <dd>
             <div>Usage: git commit -m “[ Type in the commit message]”</div>
 
@@ -59,22 +89,20 @@
               This command records or snapshots the file permanently in the
               version history.
             </div>
+            <div>Usage: git commit -a</div>
             <div>
-              Usage: git commit -a
-              <div>
-                This command commits any files you’ve added with the git add
-                command and also commits any files you’ve changed since then.
-              </div>
+              This command commits any files you’ve added with the git add
+              command and also commits any files you’ve changed since then.
             </div>
           </dd>
-          <dt><h3>git clone</h3></dt>
+          <dt><h3>5. git clone</h3></dt>
           <dd>
             <div>Usage: git clone [url]</div>
             <div>
               This command is used to obtain a repository from an existing URL.
             </div>
           </dd>
-          <dt><h3>git log</h3></dt>
+          <dt><h3>6. git log</h3></dt>
           <dd>
             <div>Usage: git log</div>
             <div>
@@ -82,7 +110,7 @@
               branch.
             </div>
           </dd>
-          <dt><h3>git remote</h3></dt>
+          <dt><h3>7. git remote</h3></dt>
           <dd>
             <div>
               Usage: git remote add [variable name] [Remote Server Link]
@@ -92,7 +120,7 @@
               remote server.
             </div>
           </dd>
-          <dt><h3>git push</h3></dt>
+          <dt><h3>8. git push</h3></dt>
           <dd>
             <div>Usage: git push [variable name] master</div>
             <div>
@@ -100,7 +128,7 @@
               remote repository.
             </div>
           </dd>
-          <dt>git pull</dt>
+          <dt><h3>9. git pull</h3></dt>
           <dd>
             <div>Usage: git pull [Repository Link]</div>
             <div>
@@ -108,7 +136,7 @@
               your working directory.
             </div>
           </dd>
-          <dt><h3>git checkout</h3></dt>
+          <dt><h3>10. git checkout</h3></dt>
           <dd>
             <div>Usage: git checkout [branch name]</div>
             <div>
@@ -120,7 +148,7 @@
               This command creates a new branch and also switches to it.
             </div>
           </dd>
-          <dt><h3>git branch</h3></dt>
+          <dt><h3>11. git branch</h3></dt>
           <dd>
             <div>Usage: git branch</div>
             <div>
@@ -132,7 +160,7 @@
             <div>Usage: git branch -d [branch name]</div>
             <div>This command deletes the feature branch.</div>
           </dd>
-          <dt><h3>git merge</h3></dt>
+          <dt><h3>12. git merge</h3></dt>
           <dd>
             <div>Usage: git merge [branch name]</div>
             <div>
@@ -143,5 +171,11 @@
         </dl>
       </section>
     </main>
+    <footer>
+      <div>Made with ❤</div>
+      <div>
+        By: <a href="https://safe-dawn-99920.herokuapp.com/">Pulkit Gupta</a>
+      </div>
+    </footer>
   </body>
 </html>
