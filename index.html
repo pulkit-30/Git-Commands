@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="themes/prism.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="./style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,37 +9,50 @@
   </head>
   <body>
     <nav class="flex">
-      <img class="logo" src="./github-logo.png" alt="github-logo" style="outline: none;">
-      <div class="nav-links"><a href="#home">Home</a></div>
-      <div class="nav-links"><a href="#about">About Git</a></div>
-      <div class="nav-links"><a href="#commands">Commands</a></div>
+      <img
+        class="logo"
+        src="./github-logo.png"
+        alt="github-logo"
+        style="outline: none"
+      />
+      <div class="flex nav-links">
+        <div><a href="#home">Home</a></div>
+        <div><a href="#about">About Git</a></div>
+        <div><a href="#commands">Commands</a></div>
+      </div>
     </nav>
+
     <main>
       <section class="home flex" id="home">
-        <div>
-          <h3>Hey there!👋</h3>
-          <h1>Want to learn git Commands</h1>
-          <div>What are you wating for scroll down 👇 and start 🚀</div>
-        </div>
-
-        <div class="float"><img src="./github-logo.png" alt="image1" /></div>
+        <h1>Hey there! 👋</h1>
+        <h3>Want to learn git Commands</h3>
+        <br />
+        <p>What are you wating for scroll down 👇 and start 🚀</p>
       </section>
       <section class="about" id="about">
         <h1>What is git? 🤔</h1>
-        <div>
+        <br />
+        <p>
           Git is a free and open source distributed version control system
           designed to handle everything from small to very large projects with
           speed and efficiency.
-        </div>
-        <div>
+        </p>
+        <p>
           Git is easy to learn and has a tiny footprint with lightning fast
           performance. It outclasses SCM tools like Subversion, CVS, Perforce,
           and ClearCase with features like cheap local branching, convenient
           staging areas, and multiple workflows.
-        </div>
+        </p>
+        <br />
         <div>
-          <h4>In Simple words Git is a version control system</h4>
-          <img src="https://git-scm.com/book/en/v2/images/local.png" alt="" />
+          <h3>In Simple words Git is a version control system</h3>
+          <br />
+          <div class="flex">
+            <img
+              src="https://git-scm.com/book/en/v2/images/local.png"
+              alt="git image"
+            />
+          </div>
           <div class="centre">
             To know more
             <a
@@ -52,158 +63,21 @@
         </div>
         <div>To install git <a href="https://git-scm.com/">click here</a></div>
       </section>
+
       <hr />
-      <section class="commands" id="commands">
-        <h1>Git Commands</h1>
-        <dl>
-          <dt><h3>1. git init</h3></dt>
-          <dd>
-            <div>Usage: git init [repository name]</div>
-            <div>
-              This command is used to start a new repository in a directory.
-            </div>
-          </dd>
-          <dt><h3>2. git status</h3></dt>
-          <dd>
-            <div>Usage: git status</div>
-            <div>
-              This command lists all the files that have to be committed.
-            </div>
-          </dd>
-          <dt><h3>3. git add</h3></dt>
-          <dd>
-            <div>Usage: git add [file]</div>
-            <div>This command adds a file to the staging area.</div>
-            <div>Usage: git add .</div>
-            <div>
-              This command adds only those files to the stagging area that are
-              modified
-            </div>
-            <div>Usage: git add *</div>
-            <div>This command adds one or more to the staging area.</div>
-          </dd>
-          <dt><h3>4. git commit</h3></dt>
-          <dd>
-            <div>Usage: git commit -m “[ Type in the commit message]”</div>
 
-            <div>
-              This command records or snapshots the file permanently in the
-              version history.
-            </div>
-            <div>Usage: git commit -a</div>
-            <div>
-              This command commits any files you’ve added with the git add
-              command and also commits any files you’ve changed since then.
-            </div>
-          </dd>
-          <dt><h3>5. git clone</h3></dt>
-          <dd>
-            <div>Usage: git clone [url]</div>
-            <div>
-              This command is used to obtain a repository from an existing URL.
-            </div>
-          </dd>
-          <dt><h3>6. git log</h3></dt>
-          <dd>
-            <div>Usage: git log</div>
-            <div>
-              This command is used to list the version history for the current
-              branch.
-            </div>
-          </dd>
-          <dt><h3>7. git remote</h3></dt>
-          <dd>
-            <div>
-              Usage: git remote add [variable name] [Remote Server Link]
-            </div>
-            <div>
-              This command is used to connect your local repository to the
-              remote server.
-            </div>
-          </dd>
-          <dt><h3>8. git push</h3></dt>
-          <dd>
-            <div>Usage: git push [variable name] master</div>
-            <div>
-              This command sends the committed changes of master branch to your
-              remote repository.
-            </div>
-          </dd>
-          <dt><h3>9. git pull</h3></dt>
-          <dd>
-            <div>Usage: git pull [Repository Link]</div>
-            <div>
-              This command fetches and merges changes on the remote server to
-              your working directory.
-            </div>
-          </dd>
-          <dt><h3>10. git checkout</h3></dt>
-          <dd>
-            <div>Usage: git checkout [branch name]</div>
-            <div>
-              This command is used to switch from one branch to another.
-            </div>
-            <div>Usage: git checkout -b [branch name]</div>
-
-            <div>
-              This command creates a new branch and also switches to it.
-            </div>
-          </dd>
-          <dt><h3>11. git branch</h3></dt>
-          <dd>
-            <div>Usage: git branch</div>
-            <div>
-              This command lists all the local branches in the current
-              repository.
-            </div>
-            <div>Usage: git branch [branch name]</div>
-            <div>This command creates a new branch.</div>
-            <div>Usage: git branch -d [branch name]</div>
-            <div>This command deletes the feature branch.</div>
-          </dd>
-          <dt><h3>12. git merge</h3></dt>
-          <dd>
-            <div>Usage: git merge [branch name]</div>
-            <div>
-              This command merges the specified branch’s history into the
-              current branch.
-            </div>
-          </dd>
-          <dt><h3>13. git --version</h3></dt>
-          <dd>
-            <div>Usage: git --version</div>
-            <div>
-              This command can be used to view which version of git you are using currently.
-            </div>
-          </dd>
-          <dt><h3>14. git config</h3></dt>
-          <dd>
-            <div>Usage: git config --list --show-origin</div>
-            <div>
-              This command can be used to view all of your settings and where they are coming from.
-            </div>
-            <div>Usage: git config --global user.name [username]</div>
-            <div>
-              This command is used to set the global username as part of the config.
-            </div>
-            <div>Usage: git config --global user.email [user email]</div>
-            <div>
-              This command is used to set the global user email as part of the config.
-          <dt><h3>13. git fetch</h3></dt>
-          <dd>
-            <div>Usage: git fetch</div>
-            <div>
-              Downloads commits, objects and refs from another repository.
-            </div>
-          </dd>
-        </dl>
+      <section id="command-section">
+        <h1>Commands</h1>
       </section>
     </main>
-    <footer>
+
+    <footer class="flex">
       <div>Made with ❤</div>
       <div>
-        By: <a href="https://safe-dawn-99920.herokuapp.com/">Pulkit Gupta</a>
+        By: <a href="https://pure-taiga-42354.herokuapp.com/">Pulkit Gupta</a>
       </div>
     </footer>
   </body>
+  <script src="./commands.js"></script>
+  <script src="./main.js"></script>
 </html>
